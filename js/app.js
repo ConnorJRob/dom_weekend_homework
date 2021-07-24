@@ -41,6 +41,10 @@ const handleFormSubmit = function (event) {
     image.src = image_source;
     adventurer_class_details.appendChild(image);
 
+    const fighting_style = document.createElement('p');
+    fighting_style.textContent = `Figthing Style: ${event.target.fighting_style.value}`;
+    newAdventurer.appendChild(fighting_style);
+
     const contract = document.createElement('p');
     contract.textContent = `Initiation Contract: ${event.target.contract.value}`;
     newAdventurer.appendChild(contract);
