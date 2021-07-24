@@ -5,6 +5,7 @@ body {
   }
 
 .adventurer{
+    text-align: center;
     list-style: none;
     border-style: solid;
     border-radius: 10px;
@@ -12,9 +13,35 @@ body {
     margin-bottom: 20px;
     padding-left:10px;
     padding-right:10px;
+    border-color: white;
+    max-width: 200px;
+}
+
+.adventurer_class_details{
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.adventurer_image{
+    margin-left: 15px;
+    border-radius: 6px;
 }
 
 #adventurer-roster{
     display: flex;
     flex-wrap: wrap;
 }
+
+#form-wrapper{
+    margin-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.form-item{
+    margin-left: 20px;
+} 

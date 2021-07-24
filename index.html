@@ -10,11 +10,10 @@
 </head>
     <body>
         <h1>Adventurer Roster</h1>
-        <p>This is the active roster of adventurers currently carrying out work for the guild.</p>
+        <p id="form-header"><strong>New Adventurer Form</strong></p>
 
         <form id="new-adventurer-form">
-            <p id="form-header">New Adventurer Form</p>
-            <div id="form-wrapper"></div>
+            <div id="form-wrapper">
                 <div class="form-item">
                     <label for="name">Adventurer Name</label>
                     <input type="text" id="adventurer_name" required/>
@@ -44,10 +43,14 @@
                         <input type="text" id="contract" required/>
                     </div>
 
-                <input type="submit" value="Initiate"/>
+                <input class ="form-item" type="submit" value="Initiate"/>
+                </div>
         </form>
 
         <h2>Roster</h2>
+        <p>This is the active roster of adventurers currently carrying out work for the guild.</p>
             <ul id="adventurer-roster"></ul>
+
+        <button id="delete_all">Delete all Adventurers</button>
     </body>
 </html>
