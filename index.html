@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Adventurer Roster</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
-</body>
+    <body>
+        <h1>Adventurer Roster</h1>
+        <p>This is the active roster of adventurers currently carrying out work for this guild.</p>
+
+        <form id="new-adventurer-form">
+            <p id="form-header">New Adventurer Form</p>
+            <div id="form-wrapper"></div>
+                <div class="form-item">
+                    <label for="name">Adventurer Name</label>
+                    <input type="text" id="adventurer-name" required/>
+                </div>
+
+                <div class="form-item">
+                    <label for="class">Adventurer Class</label>
+                    <select id = "class">
+                        <option value="" disabled selected></option>
+                        <option value="Barbarian">Barbarian</option>
+                        <option value="Bard">Bard</option>
+                        <option value="Cleric">Cleric</option>
+                        <option value="Druid">Druid</option>
+                        <option value="Fighter">Fighter</option>
+                        <option value="Monk">Monk</option>
+                        <option value="Paladin">Paladin</option>
+                        <option value="Ranger">Ranger</option>
+                        <option value="Rogue">Rogue</option>
+                        <option value="Sorcerer">Sorcerer</option>
+                        <option value="Warlock">Warlock</option>
+                        <option value="Wizard">Wizard</option>
+                    </select>
+                </div>
+
+                    <div class="form-item">
+                        <label for="contract">Initiation Contract</label>
+                        <input type="text" id="contract" required/>
+                    </div>
+
+                <input type="submit" value="Initiate"/>
+        </form>
+
+        <h2>Roster</h2>
+            <ul id="adventurer-roster"></ul>
+    </body>
 </html>
